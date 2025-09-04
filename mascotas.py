@@ -64,6 +64,8 @@ if __name__ == "__main__":
     gestor = GestorMascotas("mascotas.json")
     mascota1 = Mascota("Firulais", "Perro", 5, True, "Juan Perez")
     gestor.agregar_mascota(mascota1)
+    print("Informacion de mascotas")
+    print("============================================")
     print(gestor.obtener_mascota("Firulais"))
     gestor.actualizar_mascota("Firulais", {"edad": 6})
     gestor.eliminar_mascota("Firulais")
